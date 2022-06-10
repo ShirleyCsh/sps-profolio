@@ -34,3 +34,16 @@ async function greeting(){
     greetingContainer.innerText = textFromResponse;
   }
 
+  async function getName(){
+    const responseFromServer = await fetch('/hello');
+    const objectFromResponse = await responseFromServer.json();
+    console.log(objectFromResponse);
+
+    // Pick a random name.
+    const name = objectFromResponse[Math.floor(Math.random() * objectFromResponse.length)];
+
+    // Add it to the page.
+    const nameContainer = document.getElementById('name-container');
+    nameContainer.innerText = name;
+  }
+
