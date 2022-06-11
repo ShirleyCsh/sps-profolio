@@ -378,6 +378,15 @@
     font-weight: 600;
     color: yellow;
   }
+
+  form{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form textarea{
+      width: 50%;
+  }
   
   /*Responsive*/
   @media (max-width: 991px){
