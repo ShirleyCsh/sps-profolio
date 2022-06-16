@@ -13,8 +13,8 @@ import java.util.Arrays;
 
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
 @WebServlet("/hello")
-  public class HelloWorldServlet extends HttpServlet {
-    ArrayList<String> names = new ArrayList<>(Arrays.asList("London", "Tokyo", "New York"));
+public class HelloWorldServlet extends HttpServlet {
+  ArrayList<String> names = new ArrayList<>(Arrays.asList("London", "Tokyo", "New York"));
     
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
