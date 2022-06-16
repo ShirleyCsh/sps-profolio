@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,11 +6,11 @@
     scroll-behavior: smooth;
   }
   
-  section{
+  section {
     padding: 100px;
   }
   
-  .banner{
+  .banner {
     position:relative;
     min-height: 100vh;
     background: url(images/Background.JPG);
@@ -21,19 +21,19 @@
     align-items: center;
   }
   
-  .banner h2{
+  .banner h2 {
     font-size: 3em;
     color:#fff;
     font-weight: 500;
     line-height: 1.5em;
   }
   
-  .banner h2 span{
+  .banner h2 span {
     font-size: 1.2em;
     font-weight: 700;
   }
   
-  .banner h3{
+  .banner h3 {
     font-size: 1.5em;
     font-weight: 500;
     color:#fff;
@@ -41,7 +41,7 @@
     
   }
   
-  .resume{
+  .resume {
     position: relative;
     background: rgb(64, 108, 146);
     display: inline-block;
@@ -57,7 +57,7 @@
   }
   
   
-  header{
+  header {
     position: fixed;
     top:0;
     left:0;
@@ -70,19 +70,19 @@
     transition: 0.5s;
   }
   
-  .nav-area:after{
+  .nav-area:after {
     content:"";
     clear: both;
     display: block;
   }
   
-  header.sticky{
+  header.sticky {
     background: #fff;
     padding: 20px, 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   }
   
-  header .home{
+  header .home {
     color:white;
     font-size:24px;
     text-transform: uppercase;
@@ -91,25 +91,25 @@
     letter-spacing: 2px;
   }
   
-  header.sticky .home{
+  header.sticky .home {
     color: #111;
   }
   
   
-  header ul{
+  header ul {
     list-style: none;
     position: relative;
     display: flex;
     margin:0;
   }
   
-  header ul li{
+  header ul li {
     position: relative;
     list-style: none;
     padding-left: 50px;
   }
   
-  header ul li a{
+  header ul li a {
     position:relative;
     display:block;
     margin:0 15px;
@@ -118,11 +118,11 @@
   }
   
   
-  header.sticky ul li a{
+  header.sticky ul li a {
     color:#111;
   }
   
-  header ul li a{
+  header ul li a {
     position:relative;
     display:inline-block;
     margin:0, 15px;
@@ -131,7 +131,7 @@
   }
   
   
-  header ul li a:hover{
+  header ul li a:hover {
     color: rgb(206, 132, 144);
   }
   
@@ -154,69 +154,69 @@
     color: black;
   }
   
-  ul li ul.dropdown li a{
+  ul li ul.dropdown li a {
     color: black;
   }
   
-  ul li ul.dropdown li a:hover{
+  ul li ul.dropdown li a:hover {
     color: rgb(30, 30, 77);
     background-color: rgba(0,0,0,0.1);
   }
   
   
-  .heading{
+  .heading {
     width:100%;
     text-align: center;
     margin-bottom: 30px;
     color:black;
   }
   
-  .heading h2{
+  .heading h2 {
     font-weight:600;
     font-size: 45px;
   }
   
-  .content{
+  .content {
     display:flex;
     justify-content:space-between;
   }
   
-  .contentBox{
+  .contentBox {
     font-size: 20px;
     padding-right: 30px;
   }
   
-  .contentBox h3{
+  .contentBox h3 {
     font-size: 30px;
     margin-bottom: 10px;
   }
   
-  .picture{
+  .picture {
     min-width: 50%;
   }
   
-  img{
+  img {
     max-width: 100%;
   }
   
-  .coursework{
+  .coursework {
     background: #111;
   }
   
-  .heading.white{
+  .heading.white {
     color: #fff;
   }
   
-  .p.white{
+  .p.white {
     color: #fff;
     text-align: center;
   }
   
-  .heading.black{
+  .heading.black {
     color:#111;
   }
   
-  .timeline{
+  .timeline {
     background: rgba(0,0,0,0.8)
   }
   
@@ -321,18 +321,18 @@
     }
   }
   
-  .projects{
+  .projects {
     background: #fff;
   }
   
-  .projects .content{
+  .projects .content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
   
-  .projects .content .project{
+  .projects .content .project {
     padding: 40px 20px;
     background: rgb(238, 238, 238);
     color: #111;
@@ -344,29 +344,29 @@
     cursor: pointer;
   }
   
-  .projects .content .project:hover{
+  .projects .content .project:hover {
     background: rgb(229, 233, 248);
   }
   
-  .projects .content .project img{
+  .projects .content .project img {
     max-width: 300px;
   }
   
-  .projects .content .project h2{
+  .projects .content .project h2 {
     font-size: 20px;
     font-weight: 600;
   }
   
-  .contact{
+  .contact {
     background: rgba(207, 206, 206, 0.2);
   }
   
-  .contact .logo{
+  .contact .logo {
     text-align: center;
     cursor: pointer;
   }
   
-  .copyright{
+  .copyright {
     background: rgba(207, 206, 206, 0.2);
     color: #000;
     text-align: center;
@@ -374,19 +374,28 @@
   }
   
   
-  header ul li a:active{
+  header ul li a:active {
     font-weight: 600;
     color: yellow;
   }
+
+  form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form textarea {
+      width: 50%;
+  }
   
   /*Responsive*/
-  @media (max-width: 991px){
+  @media (max-width: 991px) {
     header, header.sticky{
       padding: 20px 50px;
       z-index: 1000;
     }
   
-    .menu{
+    .menu {
       position: fixed;
       top: 75px;;
       left:-100%;
@@ -401,17 +410,17 @@
       border-top: 1px solid rgba(0,0,0,0.2);
     }
   
-    .menu.active{
+    .menu.active {
       left:0;
     }
   
-    header ul li a{
+    header ul li a {
       color: #111;
       font-size: 24px;
       margin: 10px;
     }
   
-    .toggle{
+    .toggle {
       width: 40px;
       height: 40px;
       background: url(images/menu.png);
@@ -421,7 +430,7 @@
       cursor: pointer;
     }
   
-    .toggle.active{
+    .toggle.active {
       background: url(images/close.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -429,63 +438,63 @@
       cursor: pointer;
     }
   
-    header.sticky .toggle{
+    header.sticky .toggle {
       filter: invert(1)
     }
   
-    section{
+    section {
       padding: 100px 50px;
     }
   
-    .banner{
+    .banner {
       padding: 150px 50px 100px;
     }
   
-    .banner h2{
+    .banner h2 {
       font-size: 1.5em;
     }
   
-    .banner h3{
+    .banner h3 {
       font-size: 1em;
     }
   
-    .resume{
+    .resume {
       margin-top:10px;
       padding: 10px 20px;
       font-size: 16px;
     }
   
-    .heading h2{
+    .heading h2 {
       font-size: 24px;
     }
   
-    .contentBox h3{
+    .contentBox h3 {
       font-size: 20px;
     }
   
-    .content{
+    .content {
       flex-direction: column;
     }
   
-    .picture{
+    .picture {
       margin-bottom: 20px;
     }
   
-    .projects .content .project{
+    .projects .content .project {
       margin: 10px;
     }
   }
   
-  @media(max-width:600px){
+  @media(max-width:600px) {
     header, header.sticky{
       padding: 20px 20px;
     }
   
-    .banner{
+    .banner {
       padding: 150px 20px 100px;
     }
   
-    section{
+    section {
       padding: 100px 20px;
     }
   }
